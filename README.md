@@ -31,7 +31,7 @@ git submodule add https://github.com/dove-creative/blackthunder-conventions.git 
 git submodule update --init --recursive
 ```
 
-프로젝트의 `AGENTS.md`에서는 필요한 컨벤션과 작업 지침의 실제 경로를 명시한다. 기본 형식은 [AGENTS 템플릿](instructions/AGENTS%20템플릿.md)을 참고한다.
+프로젝트의 `AGENTS.md`에서는 필요한 컨벤션과 작업 지침의 실제 경로를 명시한다. 기본 형식은 [AGENTS 템플릿](AGENTS%20템플릿.md)을 참고한다.
 
 ## 3. 적용 기준
 
@@ -44,18 +44,18 @@ git submodule update --init --recursive
 
 ### 4-1. 컨벤션
 
-- [Convention Center Overview](conventions/01.%20Overview.md): 컨벤션의 목적과 선택 기준
-- [dove CSharp convention](conventions/dove%20CSharp%20convention.md): C# 코드 작성 기준
-- [dove documentation convention](conventions/dove%20documentation%20convention.md): 문서 작성 기준
+- [Convention Center Overview](guidelines/blackthunder-conventions/Conventions/01.%20Overview.md): 컨벤션의 목적과 선택 기준
+- [dove CSharp convention](dove%20CSharp%20convention.md): C# 코드 작성 기준
+- [dove documentation convention](dove%20documentation%20convention.md): 문서 작성 기준
 
 ### 4-2. 작업 지침
 
-- [AGENTS 템플릿](instructions/AGENTS%20템플릿.md): 일반용 및 C#용 `AGENTS.md` 기본 형식
-- [README 템플릿](instructions/README%20템플릿.md): 저장소와 패키지의 README 작성 기준
-- [네이밍](instructions/네이밍.md): 프로젝트와 코드 요소의 이름 작성 기준
-- [문서 양식](instructions/문서%20양식.md): 마크다운 문서의 구조와 표기 기준
-- [번역](instructions/번역.md): 문서 번역 기준
-- [예시 프로젝트](instructions/예시%20프로젝트.md): .NET 예시 프로젝트 구성 기준
+- [AGENTS 템플릿](AGENTS%20템플릿.md): 일반용 및 C#용 `AGENTS.md` 기본 형식
+- [README 템플릿](README%20템플릿.md): 저장소와 패키지의 README 작성 기준
+- [네이밍](네이밍.md): 프로젝트와 코드 요소의 이름 작성 기준
+- [문서 양식](문서%20양식.md): 마크다운 문서의 구조와 표기 기준
+- [번역](번역.md): 문서 번역 기준
+- [예시 프로젝트](예시%20프로젝트.md): .NET 예시 프로젝트 구성 기준
 
 ## 5. 이용 범위
 
