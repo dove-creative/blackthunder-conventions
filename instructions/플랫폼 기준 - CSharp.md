@@ -43,6 +43,10 @@
 </Project>
 ```
 
+프로젝트 파일에는 `LangVersion`을 따로 적지 않는다. 프로젝트 파일의 값은 `Directory.Build.props`보다 나중에 적용되므로 공통 설정을 덮어쓴다.
+
+`ImplicitUsings`는 C# 10 기능인 `global using`을 생성하므로 C# 9에서는 켜지 않는다. `dotnet new`로 만든 실행 프로젝트에는 `<ImplicitUsings>enable</ImplicitUsings>`가 들어 있으므로 이 항목을 지운다.
+
 C# 9를 기준으로 하면 DLL 배포, 소스 배포, 예시 코드 복사 중 어느 경우에도 Unity에서 그대로 컴파일된다.
 
 `record`나 `init` 접근자를 사용하려면 `netstandard2.1`에 없는 `IsExternalInit` 형식을 프로젝트 안에 정의한다.
@@ -96,6 +100,7 @@ Unity는 CoreCLR 전환과 함께 .NET 10과 C# 14 지원을 계획하고 있다
 
 - 라이브러리의 대상 프레임워크가 `netstandard2.1`인가
 - 저장소 공통 설정에서 언어 버전이 C# 9로 지정되어 있는가
+- 프로젝트 파일이 `LangVersion`을 덮어쓰거나 `ImplicitUsings`를 켜지 않았는가
 - 실행 프로젝트가 현재 .NET LTS 버전을 대상으로 하는가
 - `netstandard2.1`에 없는 nullable 특성과 API를 사용하지 않았는가
 - Unity 사용자가 옮겨 쓸 수 있는 예시 코드가 .NET Standard 2.1 API만 사용하는가
