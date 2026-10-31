@@ -1,0 +1,55 @@
+name: Notify consumers
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    name: Notify consumer repositories
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      # Repositories that pin this repository as a submodule.
+      CONSUMERS: unitest,blackbox-system,golden-hind
+    steps:
+      - name: Check app credentials
+        id: credentials
+        env:
+          APP_ID: ${{ vars.CONVENTIONS_APP_ID }}
+          PRIVATE_KEY: ${{ secrets.CONVENTIONS_APP_PRIVATE_KEY }}
+        run: |
+          if [ -z "$APP_ID" ] || [ -z "$PRIVATE_KEY" ]; then
+            echo "::warning::CONVENTIONS_APP_ID or CONVENTIONS_APP_PRIVATE_KEY is not set. Consumers fall back to weekly Dependabot updates."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create app token
+        id: token
+        if: steps.credentials.outputs.ready == 'true'
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.CONVENTIONS_APP_ID }}
+          private-key: ${{ secrets.CONVENTIONS_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ env.CONSUMERS }}
+
+      - name: Send update events
+        if: steps.credentials.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ steps.token.outputs.token }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          IFS=',' read -ra repos <<< "$CONSUMERS"
+          for repo in "${repos[@]}"; do
+            gh api "repos/$OWNER/$repo/dispatches" \
+              -f event_type=conventions-updated \
+              -f "client_payload[sha]=$GITHUB_SHA"
+            echo "Notified $OWNER/$repo"
+          done
