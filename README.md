@@ -33,8 +33,6 @@ git submodule update --init --recursive
 
 프로젝트 루트의 `AGENTS.md`는 [AGENTS 템플릿](instructions/AGENTS%20템플릿.md)을 복사해 사용한다.
 
-이 저장소가 바뀐 뒤 사용 저장소의 서브모듈을 올릴 때는 [서브모듈 갱신](instructions/서브모듈%20갱신.md)을 따른다.
-
 ## 3. 적용 기준
 
 - 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → 공통 컨벤션이다. 프로젝트의 `AGENTS.md`, 관련 문서와 도구 설정을 우선 확인한다.
@@ -63,7 +61,6 @@ git submodule update --init --recursive
 - [네이밍 - C#](instructions/네이밍%20-%20CSharp.md): C#과 .NET 프로젝트의 패키지 식별자, 네임스페이스, 어셈블리 이름 기준
 - [문서 양식](instructions/문서%20양식.md): 마크다운 문서의 구조와 표기 기준
 - [번역](instructions/번역.md): 문서 번역 기준
-- [서브모듈 갱신](instructions/서브모듈%20갱신.md): 갱신 봇으로 사용 저장소의 서브모듈을 올리는 절차와 갱신 PR 처리 기준
 - [예시 프로젝트](instructions/예시%20프로젝트.md): 예시 프로젝트의 실행 방식, 출력, README 구성 기준
 - [예시 프로젝트 - C#](instructions/예시%20프로젝트%20-%20CSharp.md): C#과 .NET 예시 프로젝트의 파일 구성, 설정, 실행 명령
 - [플랫폼 기준 - C#](instructions/플랫폼%20기준%20-%20CSharp.md): C# 프로젝트의 대상 프레임워크, 언어 버전, nullable 사용, DLL 연동 기준
