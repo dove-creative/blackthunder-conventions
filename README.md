@@ -33,6 +33,8 @@ git submodule update --init --recursive
 
 프로젝트 루트의 `AGENTS.md`는 [AGENTS 템플릿](instructions/AGENTS%20템플릿.md)을 복사해 사용한다.
 
+서브모듈을 갱신할 때는 [변경 이력](CHANGELOG.md)에서 그사이 바뀐 규칙을 확인한다.
+
 ## 3. 적용 기준
 
 - 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → 공통 컨벤션이다. 프로젝트의 `AGENTS.md`, 관련 문서와 도구 설정을 우선 확인한다.
@@ -64,6 +66,10 @@ git submodule update --init --recursive
 - [예시 프로젝트](instructions/예시%20프로젝트.md): 예시 프로젝트의 실행 방식, 출력, README 구성 기준
 - [예시 프로젝트 - C#](instructions/예시%20프로젝트%20-%20CSharp.md): C#과 .NET 예시 프로젝트의 파일 구성, 설정, 실행 명령
 - [플랫폼 기준 - C#](instructions/플랫폼%20기준%20-%20CSharp.md): C# 프로젝트의 대상 프레임워크, 언어 버전, nullable 사용, DLL 연동 기준
+
+### 4-3. 변경 이력
+
+- [변경 이력](CHANGELOG.md): 규칙의 추가, 변경, 삭제 내역
 
 ## 5. 라이선스
 
