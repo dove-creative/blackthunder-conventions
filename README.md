@@ -50,10 +50,9 @@ git submodule update --init --recursive
 
 - [BlackThunder Conventions Overview](conventions/00.%20Overview.md): 컨벤션의 목적과 선택 기준
 - [01. dove Documentation Convention](conventions/01.%20dove%20Documentation%20Convention.md): 문서 작성 기준
-- [02. dove Common Convention](conventions/02.%20dove%20Common%20Convention.md): 여러 언어에 공통으로 적용하는 코드 작성 기준
+- [02. dove Common Convention](conventions/02.%20dove%20Common%20Convention.md): 모든 언어와 C 계열 언어에 공통으로 적용하는 코드 작성 기준
 - [02. dove CSharp Convention](conventions/02.%20dove%20CSharp%20Convention.md): C#에 적용되는 공통 규칙, 전용 규칙과 예시
-- [02. dove TypeScript Convention](conventions/02.%20dove%20TypeScript%20Convention.md): TypeScript에 적용되는 공통 규칙
-- [02. dove Python Convention](conventions/02.%20dove%20Python%20Convention.md): Python에 적용되는 공통 규칙, PEP 8 적용 기준, 빈 줄·줄 길이·따옴표 규칙
+- [02. dove Python Convention](conventions/02.%20dove%20Python%20Convention.md): Python에 적용되는 공통 규칙, PEP 8 적용 기준, 빈 줄·따옴표 규칙
 
 ### 4-2. 작업 지침
 
@@ -71,6 +70,7 @@ git submodule update --init --recursive
 ### 4-3. 변경 이력
 
 - [변경 이력](CHANGELOG.md): 규칙의 추가, 변경, 삭제 내역
+- [이전 변경 이력](old/CHANGELOG.md): 규칙 ID 초기화 이전의 변경 내역
 
 ## 5. 라이선스
 

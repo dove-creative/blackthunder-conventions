@@ -5,7 +5,7 @@
 - 작업 시작 전 `README.md`와 작업에 관련된 컨벤션 또는 지침을 확인한다.
 - 문서 작업 시, 별도 지침이 없다면 `conventions/01. dove Documentation Convention.md`를 따른다.
 - 코드 또는 예시 작업 시, 공통 규칙도 함께 수록된 해당 언어의 컨벤션을 기본 문서로 읽는다.
-- C# 작업에는 `conventions/02. dove CSharp Convention.md`를, TypeScript 작업에는 `conventions/02. dove TypeScript Convention.md`를 적용한다.
+- C# 작업에는 `conventions/02. dove CSharp Convention.md`를, TypeScript 작업에는 `conventions/02. dove Common Convention.md`의 공통 규칙과 C 계열 규칙을 적용한다.
 - Python 작업에는 `conventions/02. dove Python Convention.md`를 적용한다.
 - 해당 언어의 문서가 없거나 언어 간 공통 기준을 확인할 때는 `conventions/02. dove Common Convention.md`를 참고한다.
 - 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → 공통 컨벤션이다.

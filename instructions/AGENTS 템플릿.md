@@ -10,7 +10,7 @@
 
 템플릿을 프로젝트 루트의 `AGENTS.md`로 복사한다.
 
-코드 작업은 해당 언어의 컨벤션을 기본 문서로 읽는다. 언어별 문서에는 적용되는 공통 규칙도 함께 수록되어 있다. 템플릿의 개발 언어별 추가 확인 절은 현재 제공하는 [C# 컨벤션](../conventions/02.%20dove%20CSharp%20Convention.md), [TypeScript 컨벤션](../conventions/02.%20dove%20TypeScript%20Convention.md), [Python 컨벤션](../conventions/02.%20dove%20Python%20Convention.md)을 기준으로 작성되어 있다.
+코드 작업은 해당 언어의 컨벤션을 기본 문서로 읽는다. 언어별 문서에는 적용되는 공통 규칙도 함께 수록되어 있다. 템플릿의 개발 언어별 추가 확인 절은 현재 제공하는 [C# 컨벤션](../conventions/02.%20dove%20CSharp%20Convention.md), [Python 컨벤션](../conventions/02.%20dove%20Python%20Convention.md)과, 전용 문서가 없는 TypeScript에 적용하는 [공통 코드 컨벤션](../conventions/02.%20dove%20Common%20Convention.md)을 기준으로 작성되어 있다.
 
 ## 3. AGENTS 템플릿
 
@@ -57,7 +57,7 @@
 
 ### TypeScript
 
-- TypeScript 코드 작업 시 `guidelines/blackthunder-conventions/conventions/02. dove TypeScript Convention.md`를 기본 문서로 읽는다.
+- TypeScript 코드 작업 시 `guidelines/blackthunder-conventions/conventions/02. dove Common Convention.md`의 공통 규칙과 C 계열 규칙을 기본 문서로 읽는다.
 
 ### Python
 
