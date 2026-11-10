@@ -10,7 +10,7 @@
 
 템플릿을 프로젝트 루트의 `AGENTS.md`로 복사한다.
 
-코드 작업은 해당 언어의 컨벤션을 기본 문서로 읽는다. 언어별 문서에는 적용되는 공통 규칙도 함께 수록되어 있다. 템플릿의 개발 언어별 추가 확인 절은 현재 제공하는 [C# 컨벤션](../conventions/02.%20dove%20CSharp%20Convention.md), [Python 컨벤션](../conventions/02.%20dove%20Python%20Convention.md)과, 전용 문서가 없는 TypeScript에 적용하는 [공통 코드 컨벤션](../conventions/02.%20dove%20Common%20Convention.md)을 기준으로 작성되어 있다.
+코드 작업은 해당 언어의 컨벤션을 기본 문서로 읽는다. C 계열 문서와 언어별 문서에는 적용되는 공통 규칙도 함께 수록되어 있다. 템플릿의 개발 언어별 추가 확인 절은 현재 제공하는 [C# 컨벤션](../conventions/02.%20dove%20CSharp%20Convention.md), [Python 컨벤션](../conventions/02.%20dove%20Python%20Convention.md)과, 전용 문서가 없는 TypeScript에 적용하는 [C 계열 컨벤션](../conventions/02.%20dove%20CF%20Convention.md)을 기준으로 작성되어 있다.
 
 ## 3. AGENTS 템플릿
 
@@ -22,8 +22,8 @@
 - 프로젝트 문서는 `docs` 폴더에 존재한다. 작업 시작 전, 관련 문서가 존재하는지 확인하고, 존재할 경우 해당 내용을 숙지한 후 작업을 시작한다.
 - 공통 컨벤션과 작업 지침은 `guidelines/blackthunder-conventions`에 존재한다. 해당 경로가 없거나 비어 있다면 서브모듈이 초기화되지 않았을 수 있으므로 사용자에게 알린다.
 - 코드 작업 시, 공통 규칙도 함께 수록된 해당 언어의 컨벤션을 기본 문서로 읽는다. 언어별 문서는 아래 개발 언어별 추가 확인을 따른다.
-- 해당 언어의 문서가 없거나 언어 간 공통 기준을 확인할 때는 `guidelines/blackthunder-conventions/conventions/02. dove Common Convention.md`를 참고한다.
-- 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → 공통 컨벤션이다.
+- 언어별 문서가 없는 C 계열 언어는 `guidelines/blackthunder-conventions/conventions/02. dove CF Convention.md`를 기본 문서로 읽는다. 그 밖의 언어별 문서가 없는 언어나 언어 간 공통 기준은 `guidelines/blackthunder-conventions/conventions/02. dove Common Convention.md`를 참고한다.
+- 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → C 계열 컨벤션(해당 언어만) → 공통 컨벤션이다.
 - 문서 작업 시, 별도 지침이 없다면 `guidelines/blackthunder-conventions/conventions/01. dove Documentation Convention.md`를 따른다.
 - 작업 유형에 해당하는 구체적인 지침이 `guidelines/blackthunder-conventions/instructions`에 존재한다면 해당 지침을 따른다.
 
@@ -57,7 +57,7 @@
 
 ### TypeScript
 
-- TypeScript 코드 작업 시 `guidelines/blackthunder-conventions/conventions/02. dove Common Convention.md`의 공통 규칙과 C 계열 규칙을 기본 문서로 읽는다.
+- TypeScript 코드 작업 시 `guidelines/blackthunder-conventions/conventions/02. dove CF Convention.md`를 기본 문서로 읽는다.
 
 ### Python
 
@@ -68,6 +68,6 @@
 
 - 파일명이 프로젝트 루트의 `AGENTS.md`인지 확인한다.
 - 프로젝트 문서와 컨벤션 경로가 실제 구조와 일치하는지 확인한다.
-- 공통 규칙도 포함된 언어별 문서를 기본 문서로 안내하고, 프로젝트 지침·설정을 우선하도록 안내하는지 확인한다.
+- 적용되는 공통 규칙도 포함된 언어별 문서 또는 C 계열 문서를 기본 문서로 안내하고, 프로젝트 지침·설정을 우선하도록 안내하는지 확인한다.
 - C# 프로젝트는 Unity 등과의 호환이 필요한지 확인하고, 플랫폼 기준 문서를 그대로 따를지 프로젝트 지침에서 조정할지 결정한다.
 - LF 정책을 사용한다면 해당 파일 형식을 `.gitattributes`나 편집기 설정에도 반영한다.

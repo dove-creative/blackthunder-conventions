@@ -37,9 +37,9 @@ git submodule update --init --recursive
 
 ## 3. 적용 기준
 
-- 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → 공통 컨벤션이다. 프로젝트의 `AGENTS.md`, 관련 문서와 도구 설정을 우선 확인한다.
-- 코드 작업 시 사용하는 언어의 컨벤션을 기본 문서로 읽는다. 언어별 문서에는 적용되는 공통 규칙과 언어별 규칙이 함께 수록되어 있다.
-- 해당 언어의 문서가 없거나 언어 간 공통 기준을 확인할 때는 [공통 코드 컨벤션](conventions/02.%20dove%20Common%20Convention.md)을 참고한다.
+- 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → C 계열 컨벤션(해당 언어만) → 공통 컨벤션이다. 프로젝트의 `AGENTS.md`, 관련 문서와 도구 설정을 우선 확인한다.
+- 코드 작업 시 사용하는 언어의 컨벤션을 기본 문서로 읽는다. C 계열 문서와 언어별 문서에는 적용되는 공통 규칙도 함께 수록되어 있다.
+- TypeScript처럼 전용 문서가 없는 C 계열 언어는 [C 계열 컨벤션](conventions/02.%20dove%20CF%20Convention.md)을 기본 문서로 읽는다. 그 밖의 언어별 문서가 없는 언어나 언어 간 공통 기준은 [공통 코드 컨벤션](conventions/02.%20dove%20Common%20Convention.md)을 참고한다.
 - 문서 작업과 그 밖의 작업은 해당 유형에 맞는 컨벤션과 지침을 선택한다.
 - 컨벤션은 판단 기준을 제공하고, 지침은 구체적인 작업 절차와 결과물 형식을 제공한다.
 - 필요한 문서만 읽고 프로젝트와 관계없는 규칙을 임의로 적용하지 않는다.
@@ -50,7 +50,8 @@ git submodule update --init --recursive
 
 - [BlackThunder Conventions Overview](conventions/00.%20Overview.md): 컨벤션의 목적과 선택 기준
 - [01. dove Documentation Convention](conventions/01.%20dove%20Documentation%20Convention.md): 문서 작성 기준
-- [02. dove Common Convention](conventions/02.%20dove%20Common%20Convention.md): 모든 언어와 C 계열 언어에 공통으로 적용하는 코드 작성 기준
+- [02. dove Common Convention](conventions/02.%20dove%20Common%20Convention.md): 모든 언어에 공통으로 적용하는 코드 작성 기준
+- [02. dove CF Convention](conventions/02.%20dove%20CF%20Convention.md): C 계열에 적용되는 공통 규칙과 C 계열 규칙, TypeScript 작업의 기본 문서
 - [02. dove CSharp Convention](conventions/02.%20dove%20CSharp%20Convention.md): C#에 적용되는 공통 규칙, 전용 규칙과 예시
 - [02. dove Python Convention](conventions/02.%20dove%20Python%20Convention.md): Python에 적용되는 공통 규칙, PEP 8 적용 기준, 빈 줄·따옴표 규칙
 
