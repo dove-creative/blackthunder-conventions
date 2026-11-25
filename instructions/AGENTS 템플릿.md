@@ -10,6 +10,8 @@
 
 템플릿을 프로젝트 루트의 `AGENTS.md`로 복사한다.
 
+`AGENTS.md`에는 작업 방법과 현재 적용되는 지침을 둔다. 역할과 관리 원칙은 [문서 양식](문서%20양식.md)의 AGENTS 절을 따른다.
+
 코드 작업은 해당 언어의 컨벤션을 기본 문서로 읽는다. C 계열 문서와 언어별 문서에는 적용되는 공통 규칙도 함께 수록되어 있다. 템플릿의 개발 언어별 추가 확인 절은 현재 제공하는 [C# 컨벤션](../conventions/02.%20dove%20CSharp%20Convention.md), [Python 컨벤션](../conventions/02.%20dove%20Python%20Convention.md)과, 전용 문서가 없는 TypeScript에 적용하는 [C 계열 컨벤션](../conventions/02.%20dove%20CF%20Convention.md)을 기준으로 작성되어 있다.
 
 ## 3. AGENTS 템플릿

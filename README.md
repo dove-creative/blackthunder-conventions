@@ -62,7 +62,8 @@ git submodule update --init --recursive
 - [README 템플릿 - C#](instructions/README%20템플릿%20-%20CSharp.md): C#과 .NET README의 설치, 빠른 시작, 테스트 명령 예시
 - [네이밍](instructions/네이밍.md): 저장소, 패키지, 네임스페이스, 산출물, 표시 이름의 공통 표기 기준
 - [네이밍 - C#](instructions/네이밍%20-%20CSharp.md): C#과 .NET 프로젝트의 패키지 식별자, 네임스페이스, 어셈블리 이름 기준
-- [문서 양식](instructions/문서%20양식.md): 마크다운 문서의 구조와 표기 기준
+- [폴더 구조](instructions/폴더%20구조.md): 소스 코드, 일반 문서, 예시, 테스트와 작업 지침의 배치 및 관리 기준
+- [문서 양식](instructions/문서%20양식.md): 프로젝트 문서의 역할과 관리 원칙, 마크다운 문서의 구조와 표기 기준
 - [번역](instructions/번역.md): 문서 번역 기준
 - [예시 프로젝트](instructions/예시%20프로젝트.md): 예시 프로젝트의 실행 방식, 출력, README 구성 기준
 - [예시 프로젝트 - C#](instructions/예시%20프로젝트%20-%20CSharp.md): C#과 .NET 예시 프로젝트의 파일 구성, 설정, 실행 명령
