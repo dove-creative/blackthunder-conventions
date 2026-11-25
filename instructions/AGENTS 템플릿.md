@@ -28,6 +28,7 @@
 - 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → C 계열 컨벤션(해당 언어만) → 공통 컨벤션이다.
 - 문서 작업 시, 별도 지침이 없다면 `guidelines/blackthunder-conventions/conventions/01. dove Documentation Convention.md`를 따른다.
 - 작업 유형에 해당하는 구체적인 지침이 `guidelines/blackthunder-conventions/instructions`에 존재한다면 해당 지침을 따른다.
+- 필요한 문서만 읽고 프로젝트와 관계없는 규칙을 임의로 적용하지 않는다.
 
 ## 언어
 

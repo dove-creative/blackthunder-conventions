@@ -8,14 +8,13 @@ BlackThunder Conventions는 여러 프로젝트에서 공유하는 코드·문�
 
 1. 구성
 2. 사용 방법
-3. 적용 기준
-4. 문서
-5. 라이선스
+3. 문서
+4. 라이선스
 
 ## 1. 구성
 
 - `conventions`: 코드와 문서를 작성할 때 적용하는 공통 컨벤션과 판단 기준
-- `instructions`: 특정 작업을 수행할 때 따르는 구체적인 절차와 템플릿
+- `instructions`: 특정 작업을 수행할 때 따르는 구체적인 절차, 결과물 형식과 템플릿
 
 ## 2. 사용 방법
 
@@ -35,18 +34,11 @@ git submodule update --init --recursive
 
 서브모듈을 갱신할 때는 [변경 이력](CHANGELOG.md)에서 그사이 바뀐 규칙을 확인한다.
 
-## 3. 적용 기준
+## 3. 문서
 
-- 코드 컨벤션의 적용 우선순위는 프로젝트 지침·설정 → 언어별 컨벤션 → C 계열 컨벤션(해당 언어만) → 공통 컨벤션이다. 프로젝트의 `AGENTS.md`, 관련 문서와 도구 설정을 우선 확인한다.
-- 코드 작업 시 사용하는 언어의 컨벤션을 기본 문서로 읽는다. C 계열 문서와 언어별 문서에는 적용되는 공통 규칙도 함께 수록되어 있다.
-- TypeScript처럼 전용 문서가 없는 C 계열 언어는 [C 계열 컨벤션](conventions/02.%20dove%20CF%20Convention.md)을 기본 문서로 읽는다. 그 밖의 언어별 문서가 없는 언어나 언어 간 공통 기준은 [공통 코드 컨벤션](conventions/02.%20dove%20Common%20Convention.md)을 참고한다.
-- 문서 작업과 그 밖의 작업은 해당 유형에 맞는 컨벤션과 지침을 선택한다.
-- 컨벤션은 판단 기준을 제공하고, 지침은 구체적인 작업 절차와 결과물 형식을 제공한다.
-- 필요한 문서만 읽고 프로젝트와 관계없는 규칙을 임의로 적용하지 않는다.
+### 3-1. 컨벤션
 
-## 4. 문서
-
-### 4-1. 컨벤션
+코드 컨벤션의 적용 우선순위와 언어별 기본 문서는 각 코드 컨벤션의 적용 기준 절에서 확인한다.
 
 - [BlackThunder Conventions Overview](conventions/00.%20Overview.md): 컨벤션의 목적과 선택 기준
 - [01. dove Documentation Convention](conventions/01.%20dove%20Documentation%20Convention.md): 문서 작성 기준
@@ -55,7 +47,7 @@ git submodule update --init --recursive
 - [02. dove CSharp Convention](conventions/02.%20dove%20CSharp%20Convention.md): C#에 적용되는 공통 규칙, 전용 규칙과 예시
 - [02. dove Python Convention](conventions/02.%20dove%20Python%20Convention.md): Python에 적용되는 공통 규칙, PEP 8 적용 기준, 빈 줄·따옴표 규칙
 
-### 4-2. 작업 지침
+### 3-2. 작업 지침
 
 - [AGENTS 템플릿](instructions/AGENTS%20템플릿.md): 프로젝트 `AGENTS.md`의 기본 형식과 개발 언어별 추가 확인 사항
 - [README 템플릿](instructions/README%20템플릿.md): 저장소와 패키지의 README 작성 기준
@@ -69,11 +61,11 @@ git submodule update --init --recursive
 - [예시 프로젝트 - C#](instructions/예시%20프로젝트%20-%20CSharp.md): C#과 .NET 예시 프로젝트의 파일 구성, 설정, 실행 명령
 - [플랫폼 기준 - C#](instructions/플랫폼%20기준%20-%20CSharp.md): C# 프로젝트의 대상 프레임워크, 언어 버전, nullable 사용, DLL 연동 기준
 
-### 4-3. 변경 이력
+### 3-3. 변경 이력
 
 - [변경 이력](CHANGELOG.md): 규칙의 추가, 변경, 삭제 내역
 - [이전 변경 이력](old/CHANGELOG.md): 규칙 ID 초기화 이전의 변경 내역
 
-## 5. 라이선스
+## 4. 라이선스
 
 이 프로젝트는 MIT 라이선스로 배포된다. 자세한 내용은 [LICENSE.md](LICENSE.md)를 참고한다.
